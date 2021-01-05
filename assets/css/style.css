@@ -1,0 +1,67 @@
+/* Global Settings */
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    background-color: #303030;
+    min-width: 10vw;
+    min-height: 100vh;
+    text-align: -webkit-center;
+
+}
+
+/* Analogue Clock */
+#analogue-clock{
+    background-color: white;
+    border: 10px double red;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 20rem;
+    height: 20rem;
+    text-align: center; 
+    margin-top: 2em;
+}
+#hour{
+    background-image: linear-gradient(#555 50%, #fff0 50%); 
+    width: 1.5rem;
+    height: 20rem;
+    position: absolute;
+    display: -webkit-inline-box;
+    border-radius: 50%;
+}
+#minute{
+    background-image: linear-gradient(#444 50%, #fff0 50%);
+    width: 1rem;
+    height: 20rem;
+    position: absolute;
+    display: -webkit-inline-box;
+    transform: rotate(45deg);
+    border-radius: 30%;
+}
+#second{
+    background-image: linear-gradient(#333 50%, #fff0 50%);
+    width: 0.5rem;
+    height: 20rem;
+    position: absolute;
+    display: -webkit-inline-box;
+    transform: rotate(90deg);
+    border-radius: 70%;
+}
+#dot{
+    background: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 12rem;
+    left: 47.5vw;
+}
+
+/* Digital Clock */
+#digital-clock{
+    margin: 20px 0px;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
